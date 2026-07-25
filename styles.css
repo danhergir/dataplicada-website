@@ -148,8 +148,8 @@ h1 em { display: inline-block; color: var(--yellow); font-style: normal; }
 
 .about-preview { padding: clamp(4rem, 6vw, 6rem) 4vw; background: var(--paper); }
 .about-preview-grid { display: grid; grid-template-columns: .85fr 1.15fr; gap: 8vw; align-items: center; }
-.about-stack { width: min(330px, 100%); display: grid; grid-template-columns: 1fr 1fr; gap: .5rem; align-items: center; }
-.about-stack img { width: 100%; position: static; object-fit: cover; border: 1px solid var(--ink); border-radius: 50%; box-shadow: 7px 7px 0 var(--paper), 8px 8px 0 var(--ink); }
+.about-stack { width: min(300px, 100%); display: grid; grid-template-columns: 1fr 1fr; gap: .65rem; align-items: center; }
+.about-stack img { width: 100%; height: auto; aspect-ratio: 1; position: static; object-fit: cover; border: 1px solid var(--ink); border-radius: 50%; box-shadow: 5px 5px 0 var(--paper), 6px 6px 0 var(--ink); }
 .about-stack img:nth-child(1) { transform: rotate(-2deg); }
 .about-stack img:nth-child(2) { transform: translateY(1.2rem) rotate(2deg); }
 .about-stack img:nth-child(3) { transform: rotate(2deg); }
@@ -276,7 +276,7 @@ footer p { margin: 0; font-size: .75rem; text-align: right; }
   .hero-note { margin-top: 4rem; justify-self: start; }
   .intro-grid, .work-heading, .approach-grid { grid-template-columns: 1fr; }
   .about-preview-grid, .team-heading, .contact-page { grid-template-columns: 1fr; }
-  .about-stack { width: min(330px, 100%); }
+  .about-stack { width: min(300px, 100%); }
   .capability { grid-template-columns: .12fr 1fr; }
   .capability figure { grid-column: 2; width: min(560px, 100%); max-height: 250px; }
   .case-grid { grid-template-columns: 1fr; }
