@@ -32,4 +32,49 @@ window.setTimeout(() => {
   document.querySelectorAll(".reveal").forEach((element) => element.classList.add("visible"));
 }, 1200);
 
-document.querySelector("#year").textContent = new Date().getFullYear();
+const year = document.querySelector("#year");
+if (year) year.textContent = new Date().getFullYear();
+
+const inquiryForm = document.querySelector("[data-antispam-form]");
+
+if (inquiryForm) {
+  const startedAt = Date.now();
+  const startedAtField = inquiryForm.querySelector("#form-started-at");
+  const honeypot = inquiryForm.querySelector('input[name="_honey"]');
+  const status = inquiryForm.querySelector("#form-status");
+  const submitButton = inquiryForm.querySelector('button[type="submit"]');
+
+  if (startedAtField) startedAtField.value = new Date(startedAt).toISOString();
+
+  inquiryForm.addEventListener("submit", (event) => {
+    const elapsed = Date.now() - startedAt;
+    const lastAttempt = Number(sessionStorage.getItem("dataplicada-form-attempt") || 0);
+
+    if (honeypot?.value) {
+      event.preventDefault();
+      inquiryForm.reset();
+      if (status) status.textContent = "We could not send that message. Please reload the page and try again.";
+      return;
+    }
+
+    if (elapsed < 4000) {
+      event.preventDefault();
+      if (status) status.textContent = "Please take a moment to review your message before sending.";
+      return;
+    }
+
+    if (Date.now() - lastAttempt < 15000 || inquiryForm.dataset.submitting === "true") {
+      event.preventDefault();
+      if (status) status.textContent = "Your message is already being submitted.";
+      return;
+    }
+
+    sessionStorage.setItem("dataplicada-form-attempt", String(Date.now()));
+    inquiryForm.dataset.submitting = "true";
+    if (status) status.textContent = "Sending your inquiry securely…";
+    if (submitButton) {
+      submitButton.disabled = true;
+      submitButton.querySelector("span").textContent = "Sending…";
+    }
+  });
+}
