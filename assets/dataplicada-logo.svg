@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 472 80" role="img" aria-labelledby="title desc">
+  <title id="title">Dataplicada</title>
+  <desc id="desc">A geometric letter D containing a rising data trajectory, followed by the Dataplicada wordmark.</desc>
+  <defs>
+    <mask id="d-cut">
+      <rect width="80" height="80" fill="white"/>
+      <path d="M31 25h7.5C49.1 25 56 30.8 56 40s-6.9 15-17.5 15H31z" fill="black"/>
+    </mask>
+  </defs>
+  <g>
+    <path d="M16 10h23.5C61 10 74 21.7 74 40S61 70 39.5 70H16z" fill="#30334f" mask="url(#d-cut)"/>
+    <path d="M27.5 52.5 37 44l8 4.5L57 31" fill="none" stroke="#ffbd00" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="27.5" cy="52.5" r="4.5" fill="#ffbd00"/>
+    <circle cx="37" cy="44" r="4.5" fill="#ffbd00"/>
+    <circle cx="45" cy="48.5" r="4.5" fill="#ffbd00"/>
+    <circle cx="57" cy="31" r="4.5" fill="#ffbd00"/>
+  </g>
+  <text x="94" y="57.5" fill="#30334f" font-family="'Archivo Black', 'Arial Black', sans-serif" font-size="44" font-weight="900" letter-spacing="-2.2">DATAPLICADA</text>
+</svg>
