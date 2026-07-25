@@ -43,8 +43,13 @@ if (inquiryForm) {
   const honeypot = inquiryForm.querySelector('input[name="_honey"]');
   const status = inquiryForm.querySelector("#form-status");
   const submitButton = inquiryForm.querySelector('button[type="submit"]');
+  const requestedService = new URLSearchParams(window.location.search).get("service");
+  const serviceSelect = inquiryForm.querySelector("#project-type");
 
   if (startedAtField) startedAtField.value = new Date(startedAt).toISOString();
+  if (requestedService && serviceSelect?.querySelector(`option[value="${CSS.escape(requestedService)}"]`)) {
+    serviceSelect.value = requestedService;
+  }
 
   inquiryForm.addEventListener("submit", (event) => {
     const elapsed = Date.now() - startedAt;
