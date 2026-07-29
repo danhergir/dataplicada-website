@@ -219,6 +219,7 @@ h1 em { display: inline-block; color: var(--yellow); font-style: normal; }
 .study-blue .text-link { color: white; border-color: white; }
 .study-cta { width: max-content; margin-top: 2rem; display: inline-flex; gap: .8rem; padding: .7rem 0 .25rem; font-family: var(--mono); font-size: .7rem; font-weight: 500; text-decoration: none; border-bottom: 2px solid currentColor; }
 .study-actions { display: flex; gap: 1.5rem; flex-wrap: wrap; }
+.study-status { margin-top: 2rem; align-self: flex-end; font-family: var(--mono); font-size: .64rem; opacity: .8; }
 
 /* Contact page */
 .contact-page { min-height: calc(100vh - 76px); display: grid; grid-template-columns: .78fr 1.22fr; overflow: hidden; background: var(--deep); }
