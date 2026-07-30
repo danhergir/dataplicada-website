@@ -10,4 +10,4 @@ python3 -m http.server 8080
 
 Open <http://localhost:8080>.
 
-The site has no server-side dependencies or paid form service. Project inquiries use the `hello@dataplicada.com` email address.
+The site has no server-side dependencies or paid form service. Project inquiries use the `dataplicada@gmail.com` email address.
