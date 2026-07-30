@@ -44,11 +44,22 @@ if (inquiryForm) {
   const status = inquiryForm.querySelector("#form-status");
   const submitButton = inquiryForm.querySelector('button[type="submit"]');
   const requestedService = new URLSearchParams(window.location.search).get("service");
+  const requestedTopic = new URLSearchParams(window.location.search).get("topic");
   const serviceSelect = inquiryForm.querySelector("#project-type");
+  const challengeField = inquiryForm.querySelector("#challenge");
 
   if (startedAtField) startedAtField.value = new Date(startedAt).toISOString();
   if (requestedService && serviceSelect?.querySelector(`option[value="${CSS.escape(requestedService)}"]`)) {
     serviceSelect.value = requestedService;
+  }
+  if (requestedTopic && challengeField && !challengeField.value) {
+    const topicPrompts = {
+      "feedbacker": "I would like to discuss a customer-feedback or Voice of Customer workflow similar to Feedbacker.",
+      "port-data": "I would like to test a pilot for cross-checking port or logistics records.",
+      "real-estate-documents": "I would like to test a pilot for finding gaps across real-estate or legal documents.",
+      "ceo-ai-webinar": "I am interested in the CEO AI executive briefing. The question I most want covered is: "
+    };
+    if (topicPrompts[requestedTopic]) challengeField.value = topicPrompts[requestedTopic];
   }
 
   inquiryForm.addEventListener("submit", (event) => {
