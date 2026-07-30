@@ -274,6 +274,7 @@ h1 em { display: inline-block; color: var(--yellow); font-style: normal; }
   border: 1px solid currentColor;
   white-space: nowrap;
 }
+.thanks-language { display: inline-block; margin-top: 1.25rem; font-family: var(--mono); font-size: .7rem; }
 .scenario-section { padding: clamp(4rem, 6vw, 6rem) 4vw; color: white; background: var(--deep); }
 .scenario-heading { margin-bottom: 3rem; display: grid; grid-template-columns: 1fr .42fr; gap: 7vw; align-items: end; }
 .scenario-heading h2 { margin: 0; font-size: clamp(2.7rem, 4.8vw, 5.1rem); }
