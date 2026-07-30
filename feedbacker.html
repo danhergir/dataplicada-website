@@ -15,7 +15,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&amp;family=IBM+Plex+Mono:wght@400;500&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20260729-3">
+  <link rel="stylesheet" href="styles.css?v=20260729-4">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -37,159 +37,59 @@
   </header>
 
   <main id="main">
-    <section class="feedbacker-case-hero">
-      <div class="case-hero-copy reveal">
-        <p class="kicker"><span class="status-dot"></span> Selected work · Product engineering + applied AI</p>
-        <h1>We built a feedback system from <em>collection to action.</em></h1>
-        <p>Feedbacker was a Dataplicada product for service teams. We designed and engineered the web application, analysis API, data workflows, and customer follow-up tools behind it.</p>
-        <a class="button button-primary" href="#case-brief">Read the case <span>↓</span></a>
+    <section class="feedbacker-story-hero">
+      <div class="story-hero-copy reveal">
+        <p class="kicker"><span class="status-dot"></span> Case study · Feedbacker</p>
+        <h1>From customer comments to <em>clear next steps.</em></h1>
+        <p>Dataplicada designed and built a complete feedback operation for service teams.</p>
+        <a class="text-link story-link" href="#story">See what we built <span>↓</span></a>
       </div>
-      <div class="case-hero-art reveal">
-        <div class="case-logo">
-          <img src="assets/feedbacker/feedbacker-logo.webp" width="1000" height="300" alt="Feedbacker by Dataplicada">
-        </div>
-        <figure>
-          <img src="assets/feedbacker/feedbacker-hero.png" width="1200" height="1028" alt="Feedbacker customer-experience illustration">
-        </figure>
-        <p class="mono">VOICE OF CUSTOMER · MULTI-TENANT SOFTWARE</p>
+      <div class="story-signal" aria-hidden="true">
+        <span>COLLECT</span>
+        <span>UNDERSTAND</span>
+        <span>ACT</span>
       </div>
     </section>
 
-    <section class="case-brief" id="case-brief">
-      <p class="section-label">Case brief <span>01</span></p>
-      <div class="case-brief-grid">
-        <article>
-          <span>THE CHALLENGE</span>
-          <p>Help smaller service teams collect feedback and find useful patterns without reviewing every comment manually.</p>
-        </article>
-        <article>
-          <span>OUR ROLE</span>
-          <p>Product strategy, UX, full-stack engineering, data pipelines, NLP, AI integration, and iteration.</p>
-        </article>
-        <article>
-          <span>THE SYSTEM</span>
-          <p>A multi-tenant web app, a separate analysis API, MySQL data, and messaging and reward workflows.</p>
-        </article>
-        <article>
-          <span>THE RECORD</span>
-          <p>The repositories show active development from 2022 through 2026. The product is no longer offered.</p>
-        </article>
+    <section class="story-intro" id="story">
+      <p class="section-label">The challenge <span>01</span></p>
+      <div class="story-intro-copy">
+        <h2 class="reveal">Feedback was easy to collect—and hard to use.</h2>
+        <p class="reveal">Teams needed one path from an individual comment to a pattern, a response, or an escalation.</p>
       </div>
     </section>
 
-    <section class="case-challenge">
-      <p class="section-label light">The operating problem <span>02</span></p>
-      <div class="case-challenge-heading">
-        <h2 class="reveal">Feedback only matters when a team can use it.</h2>
-        <p class="reveal">The hard part was not collecting another rating. It was connecting collection, language analysis, and follow-up in one workflow.</p>
-      </div>
-      <div class="case-problem-flow">
-        <div><span>01</span><strong>Collect</strong><p>Reach customers close to the service moment.</p></div>
-        <div><span>02</span><strong>Understand</strong><p>Turn comments into searchable, comparable signals.</p></div>
-        <div><span>03</span><strong>Act</strong><p>Give teams a clear next step or escalation.</p></div>
-      </div>
+    <section class="story-process">
+      <p class="section-label">The system <span>02</span></p>
+      <h2 class="reveal">One connected workflow.</h2>
+      <ol class="story-process-line" aria-label="Feedbacker workflow">
+        <li class="reveal"><span>01</span><strong>Collect</strong><small>Forms, QR, CSV and WhatsApp</small></li>
+        <li class="reveal"><span>02</span><strong>Read</strong><small>Translation, sentiment and keywords</small></li>
+        <li class="reveal"><span>03</span><strong>Understand</strong><small>AI summaries and searchable evidence</small></li>
+        <li class="reveal"><span>04</span><strong>Respond</strong><small>Rewards, PQRS and escalation</small></li>
+      </ol>
     </section>
 
-    <section class="case-system">
-      <p class="section-label">What we built <span>03</span></p>
-      <div class="case-system-heading">
-        <h2 class="reveal">A full feedback stack—not a single model.</h2>
-        <p class="reveal">The system evolved in modules. Each layer handled a distinct part of the business process.</p>
-      </div>
-      <div class="architecture-map">
-        <article class="reveal">
-          <span>01 / INPUTS</span>
-          <h3>Collection channels</h3>
-          <ul><li>Branded feedback forms</li><li>Company QR codes</li><li>CSV imports</li><li>WhatsApp conversations</li></ul>
-        </article>
-        <article class="reveal">
-          <span>02 / APPLICATION</span>
-          <h3>Multi-tenant operations</h3>
-          <ul><li>Company and user accounts</li><li>Authentication and subscriptions</li><li>Rewards and reference IDs</li><li>PQRS case workflows</li></ul>
-        </article>
-        <article class="reveal">
-          <span>03 / INTELLIGENCE</span>
-          <h3>Analysis service</h3>
-          <ul><li>Translation and sentiment ensemble</li><li>Keyword-frequency processing</li><li>AI classification and explanations</li><li>Conversational analysis with memory</li></ul>
-        </article>
-        <article class="reveal">
-          <span>04 / OUTPUTS</span>
-          <h3>Decision support</h3>
-          <ul><li>Ratings and comment dashboards</li><li>Keyword trends and search</li><li>Suggested actions</li><li>Escalations and follow-up</li></ul>
-        </article>
-      </div>
-    </section>
-
-    <section class="case-evidence">
-      <p class="section-label light">The working interface <span>04</span></p>
-      <div class="case-evidence-heading">
-        <h2 class="reveal">Overview and evidence stayed together.</h2>
-        <p class="reveal">Teams could move from aggregate indicators back to the comments that produced them.</p>
-      </div>
-      <div class="case-screens">
-        <figure class="reveal">
-          <div><img src="assets/feedbacker/dashboard.webp" width="1400" height="1200" alt="Feedbacker Voice of Customer dashboard"></div>
-          <figcaption><span>01</span> Company-level Voice of Customer dashboard</figcaption>
-        </figure>
-        <figure class="reveal">
-          <div><img src="assets/feedbacker/text-analytics.webp" width="1400" height="1200" alt="Feedbacker text analytics interface"></div>
-          <figcaption><span>02</span> Searchable comments and text classification</figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <section class="case-capabilities">
-      <p class="section-label">Capabilities delivered <span>05</span></p>
-      <div class="capability-delivery-grid">
-        <article class="reveal"><span>01</span><h2>Multi-channel collection</h2><p>Forms, QR, bulk uploads, and later proactive WhatsApp sessions.</p></article>
-        <article class="reveal"><span>02</span><h2>Company-specific analytics</h2><p>Comments, ratings, keywords, trends, and filters separated by organization.</p></article>
-        <article class="reveal"><span>03</span><h2>Multilingual NLP</h2><p>Translation plus VADER and TextBlob sentiment scoring for imported comments.</p></article>
-        <article class="reveal"><span>04</span><h2>AI-assisted interpretation</h2><p>Classification, consequences, cited phrases, summaries, and an analyst chat with memory.</p></article>
-        <article class="reveal"><span>05</span><h2>Service recovery</h2><p>Negative-sentiment escalation, PQRS tracking, and traceable reference IDs.</p></article>
-        <article class="reveal"><span>06</span><h2>Participation workflows</h2><p>Configurable rewards, eligibility, claims, and customer follow-up.</p></article>
-      </div>
-    </section>
-
-    <section class="case-stack">
-      <div>
-        <p class="mono">IMPLEMENTATION</p>
-        <h2>Two applications.<br>One operating system.</h2>
-      </div>
-      <div class="stack-lanes">
-        <article>
-          <span>PRODUCT APPLICATION</span>
-          <p>Laravel · PHP · MySQL · queues · webhooks · subscriptions · Respond.io</p>
-        </article>
-        <article>
-          <span>ANALYSIS API</span>
-          <p>FastAPI · Python · SQLAlchemy · Pandas · VADER · TextBlob · LangChain · OpenAI · Gemini</p>
-        </article>
-        <article>
-          <span>RELIABILITY CONTROLS</span>
-          <p>Bearer authentication · signed webhooks · company isolation · message deduplication · fallback conversation logic</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="case-accomplishments">
-      <p class="section-label light">What we accomplished <span>06</span></p>
-      <div class="case-accomplishments-grid">
-        <h2 class="reveal">We turned an idea into an end-to-end software product.</h2>
-        <div class="accomplishment-list">
-          <p class="reveal"><span>01</span> Built the customer-facing collection experience, authenticated workspace, analytics API, and data layer.</p>
-          <p class="reveal"><span>02</span> Connected AI analysis to real product actions: search, trends, summaries, rewards, and escalation.</p>
-          <p class="reveal"><span>03</span> Evolved the system from forms and QR codes into queued, stateful WhatsApp feedback conversations.</p>
-          <p class="reveal"><span>04</span> Created reusable Dataplicada capability in document and language workflows, multi-tenant data, and applied AI.</p>
+    <section class="story-build">
+      <p class="section-label light">What we built <span>03</span></p>
+      <div class="story-build-copy">
+        <h2 class="reveal">A working product—not an AI demo.</h2>
+        <div class="story-build-points reveal">
+          <p><strong>Product.</strong> A secure multi-company workspace for feedback, users and service recovery.</p>
+          <p><strong>Intelligence.</strong> A Python analysis service for language, trends and assisted interpretation.</p>
+          <p><strong>Operations.</strong> Queued messaging, signed webhooks and traceable customer follow-up.</p>
         </div>
       </div>
+      <p class="story-stack mono">Laravel · FastAPI · MySQL · NLP · AI agents · messaging workflows</p>
     </section>
 
-    <section class="product-contact">
-      <div>
-        <p class="mono">HAVE A CUSTOMER, LANGUAGE, OR DOCUMENT WORKFLOW?</p>
-        <h2>Build the useful part first.</h2>
+    <section class="story-outcomes">
+      <p class="section-label">The accomplishment <span>04</span></p>
+      <div class="story-outcomes-copy">
+        <h2 class="reveal">We took Feedbacker from concept to an end-to-end system.</h2>
+        <p class="reveal">The work gave Dataplicada reusable experience in multi-tenant software, language pipelines, applied AI and customer operations.</p>
       </div>
-      <a class="button button-primary" href="contact.html?service=ai-workflow&amp;topic=feedbacker">Discuss an AI workflow <span>↗</span></a>
+      <a class="button button-primary" href="contact.html?service=ai-workflow&amp;topic=feedbacker">Discuss a similar challenge <span>↗</span></a>
     </section>
   </main>
 
