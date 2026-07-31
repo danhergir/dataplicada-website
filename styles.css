@@ -564,6 +564,11 @@ h1 em { display: inline-block; color: var(--yellow); font-style: normal; }
 .thanks-page > div { max-width: 1100px; }
 .thanks-page h1 { margin: 2rem 0; font-size: clamp(4rem, 9vw, 10rem); }
 .thanks-page p:not(.kicker) { max-width: 650px; margin-bottom: 2.5rem; color: #d6d8e5; font-size: 1.08rem; }
+.thanks-schedule { max-width: 650px; margin: 0 0 1.4rem; padding: 1.2rem 0 0; border-top: 1px solid var(--yellow); }
+.thanks-schedule p { margin: 0; }
+.thanks-schedule p.mono { margin-bottom: .45rem; color: var(--yellow); font-size: .64rem; }
+.thanks-schedule p:not(.mono) { margin-bottom: 0; font-size: .92rem; }
+.thanks-actions { display: flex; gap: .8rem; align-items: stretch; flex-wrap: wrap; }
 
 footer { min-height: 170px; padding: 2.5rem 4vw; display: grid; grid-template-columns: 1fr 1fr 1fr; align-items: end; gap: 2rem; background: var(--paper); border-top: 1px solid var(--ink); }
 .footer-brand img { width: 230px; height: auto; display: block; }
