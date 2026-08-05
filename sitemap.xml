@@ -21,13 +21,23 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dataplicada.com/case-studies.html</loc>
-    <changefreq>monthly</changefreq>
+    <loc>https://dataplicada.com/aydea-consultores.html</loc>
+    <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://dataplicada.com/es/case-studies.html</loc>
-    <changefreq>monthly</changefreq>
+    <loc>https://dataplicada.com/es/aydea-consultores.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dataplicada.com/emerge.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dataplicada.com/es/emerge.html</loc>
+    <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
