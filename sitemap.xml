@@ -41,6 +41,16 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://dataplicada.com/soultribe-investments.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://dataplicada.com/es/soultribe-investments.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://dataplicada.com/contact.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
