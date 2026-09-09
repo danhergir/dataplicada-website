@@ -32,6 +32,21 @@ window.setTimeout(() => {
   document.querySelectorAll(".reveal").forEach((element) => element.classList.add("visible"));
 }, 1200);
 
+const marquee = document.querySelector(".marquee");
+const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+if (marquee && !reducedMotion.matches) {
+  let marqueeInView = false;
+  const updateMarquee = () => marquee.classList.toggle("is-paused", document.hidden || !marqueeInView);
+  const marqueeObserver = new IntersectionObserver(([entry]) => {
+    marqueeInView = entry.isIntersecting;
+    updateMarquee();
+  });
+
+  marqueeObserver.observe(marquee);
+  document.addEventListener("visibilitychange", updateMarquee);
+}
+
 const year = document.querySelector("#year");
 if (year) year.textContent = new Date().getFullYear();
 

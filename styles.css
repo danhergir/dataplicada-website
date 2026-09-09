@@ -83,7 +83,10 @@ h1 em { display: inline-block; color: var(--yellow); font-style: normal; }
 .hero-note strong { color: var(--yellow); }
 
 .marquee { overflow: hidden; padding: 1.2rem 0; background: var(--yellow); border-bottom: 1px solid var(--ink); }
-.marquee-track { width: max-content; display: flex; align-items: center; gap: 2rem; animation: marquee 26s linear infinite; }
+.marquee-track { width: max-content; display: flex; align-items: center; animation: marquee 26s linear infinite; }
+.marquee.is-paused .marquee-track { animation-play-state: paused; }
+.marquee-group { min-width: 100vw; padding-inline: clamp(1rem, 2vw, 2rem); display: flex; flex: 0 0 auto; align-items: center; justify-content: space-around; gap: clamp(1.5rem, 3vw, 3rem); box-sizing: border-box; }
+.marquee-group > * { flex: 0 0 auto; }
 .marquee span { font-family: var(--display); font-size: 1.2rem; }
 .marquee i { color: var(--orange); font-style: normal; }
 @keyframes marquee { to { transform: translateX(-50%); } }
